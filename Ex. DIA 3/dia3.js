@@ -1,11 +1,18 @@
-nome = prompt("Digite seu nome:")
-//parseint
-let  idade = parseInt(prompt("Digite a sua idade:"))
-let altura = parseInt(prompt("Digite sua altura em cm:"))
-let peso = parseInt(prompt("Digite seu peso:"))
-let anoNascimento = 2023 - idade
+//variáveis
+let nome = prompt("Digite seu nome: ")
+let idade = parseInt(prompt("Digite a sua idade: "))
+let altura = parseInt(prompt("Digite sua altura em cm: "))
+let peso = parseInt(prompt("Digite seu peso: "))
 
-let IMC = 0
-IMC = peso / (altura * altura) 
+// Ano de Nascimento e IMC 
+let AnoNascimento = 0
+AnoNascimento = 2023 - idade
 
-console.log("Ola", nome, "voce tem ", idade, "anos, nasceu em", anoNascimento, ", tem", altura, "cm de altura, pesa", peso, "kg seu IMC é", IMC , "Kg/m2")
+let IMC = 0 
+IMC = (peso / (altura**2))*10000
+let imc = IMC.toFixed(2)
+
+
+
+
+console.log("Olá", nome, "voce tem ", idade, "anos, nasceu em", AnoNascimento, ", tem", altura, "cm de altura, pesa", peso, "kg e seu IMC é", imc , "Kg/m2")
