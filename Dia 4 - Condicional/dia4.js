@@ -3,18 +3,18 @@
 // === é igual o valor e o tipo | !== é diferente o valor e o tipo //
 
 // variávies
-let  fome = prompt("Você está com fome?")
-let dinheiro = prompt("Você tem dinheiro?")
-let rest = prompt("O restaurante está aberto?")
+let  fome = prompt("Você está com fome? (s/n)")
+let dinheiro = prompt("Você tem dinheiro? (s/n)")
+let rest = prompt("O restaurante está aberto? (s/n) ")
 
 
 //if e else
-if (fome == "não" || dinheiro == "não"){
+if (fome == "n" || dinheiro == "n"){
     console.log("Hoje a janta será em casa")  
-} else if (fome == "sim" && dinheiro == "sim" && rest == "não"){
+} else if (fome == "s" && dinheiro == "s" && rest == "n"){
    console.log("Peça um delivery!")
-}else if (fome == "sim" && dinheiro == "sim" && rest == "sim"){
+}else if (fome == "s" && dinheiro == "s" && rest == "s"){
     console.log("Hoje o jantar será no seu restaurante preferido")
 }else{
-    console.log("Comando errado, responda com sim ou não")
+    console.log("Comando errado, responda com s ou n")
 }
